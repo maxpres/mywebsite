@@ -1,0 +1,243 @@
+.i {
+  display: flex;
+  height: 100vh;
+  /* background-image: url("../../img/wave9.svg"); */
+  /* background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
+
+  background-color: #2d3436;
+  background-image: linear-gradient(115deg, #252627 0%, #000000 54%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-left-wrapper {
+  padding-left: 100px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50vw;
+  position: absolute;
+  top: 15%;
+  z-index: 10;
+}
+
+.i-intro {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.i-desc {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.822);
+  font-weight: 300;
+  letter-spacing: 1px;
+  /* font-style: italic; */
+}
+
+.name {
+  position: absolute;
+  top: 20%;
+  font-size: 4.5rem;
+  font-weight: 400;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.personal {
+  font-size: 1rem;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-img {
+  width: auto;
+  height: 140%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.spacer {
+  aspect-ratio: 900/360;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .i {
+    flex-direction: column;
+  }
+  .i-left-wrapper {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .i-desc {
+    display: none;
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.name span {
+  color: #59b256;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: #000;
+  padding: 15px 25px;
+  border: 2px solid#59b256;
+  transition: color 0.4s linear;
+  z-index: 3;
+  width: 190px;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #59b256;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
+}
+
+.btnContainer {
+  padding-left: 50px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scrollTop 0.5s alternate ease infinite;
+}
+
+.scroll-to-top .icon {
+  color: #000000;
+  width: 30px;
+  height: 30px;
+  transition: color 0.3s;
+}
+
+.scroll-to-top .icon:hover {
+  color: #59b256;
+}
+
+@keyframes scrollTop {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.social-media {
+  position: fixed;
+  z-index: 10;
+  right: 25px;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+
+.social {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  transition: transform 250ms;
+  color: #fff;
+}
+
+.social:hover {
+  transform: translateY(-3px);
+}
+
+.msg-box {
+  font-size: 1.3rem;
+}

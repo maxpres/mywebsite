@@ -1,0 +1,84 @@
+.p {
+  width: 30%;
+  height: 100%;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.subject {
+  color: #474747;
+  font-size: 1rem;
+}
+
+.p-description {
+  padding: 10px 20px;
+  color: #c0c0c0;
+  text-align: justify;
+}
+
+.description-box {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+}
+
+.description-box span {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.headline {
+  display: flex;
+  justify-content: start;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.p-browser {
+  height: 35px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+
+.p-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  background-position: center;
+  /* border-bottom: 2px solid rgb(243, 242, 242); */
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+}
+
+.techstack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 10px 20px;
+  border-bottom: 2px solid rgb(243, 242, 242);
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .p {
+    width: 40%;
+    height: 20vh;
+  }
+}
