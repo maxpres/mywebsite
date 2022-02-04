@@ -1,5 +1,5 @@
 import "./intro.css";
-import Me from "../../img/ich22.png";
+import Me from "../../img/ich.png";
 import Wave from "./Wave";
 import React from "react";
 import ScrollToTop from "./ScrollToTop";

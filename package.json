@@ -1,6 +1,6 @@
 {
-  "homepage": "https://maxpres.github.io/my-website",
-  "name": "my-website",
+  "homepage": "https://maxpres.github.io/mywebsite",
+  "name": "mywebsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

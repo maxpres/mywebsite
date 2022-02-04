@@ -15,7 +15,8 @@ export const products = [
       "This application is a todo list that saves your entered data. Completed tasks can be marked as this. A filter can be used to display tasks that are still to be done or are already completed.",
     img: require("../src/img/todo.png"),
     tech: "HTML, CSS, JavaScript",
-    link: "http://lama.dev",
+    linknetlify: "https://wizardly-lamport-5a88cf.netlify.app",
+    linkgithub: "https://github.com/maxpres/todo2.github.io",
   },
   {
     id: 3,
@@ -24,6 +25,7 @@ export const products = [
       "This application is a quiz app that can also save your final result in a highscore list. The number of correctly or incorrectly answered questions or the number of skipped questions can be seen in a summary at the end of the quiz.",
     img: require("../src/img/quiz.png"),
     tech: "HTML, CSS, JavaScript",
-    link: "http://lama.dev",
+    linknetlify: "https://dazzling-sinoussi-9eabc7.netlify.app",
+    linkgithub: "https://github.com/maxpres/quiz.github.io",
   },
 ];

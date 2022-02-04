@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Navigation from "./Nav.css";
+import "./Nav.css";
 import { motion } from "framer-motion";
-import styled from "styled-components";
 import { titleAnimNav, ContainerNav } from "../../animation";
 
 import { Link } from "react-scroll";

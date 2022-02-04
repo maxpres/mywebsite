@@ -27,7 +27,8 @@ const ProductList = () => {
           <Product
             key={item.id}
             img={item.img}
-            link={item.link}
+            linknetlify={item.linknetlify}
+            linkgithub={item.linkgithub}
             subject={item.subject}
             description={item.description}
           />

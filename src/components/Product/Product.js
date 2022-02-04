@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { scrollReveal } from "../../animation";
 import { useScroll } from "../../scrollAnimation";
 
-const Product = ({ img, subject, description }) => {
+const Product = ({ img, linknetlify, linkgithub, subject, description }) => {
   const [clicked, setClicked] = useState(false);
 
   let index;
@@ -31,14 +31,8 @@ const Product = ({ img, subject, description }) => {
         <h3 className="subject">{subject}</h3>
       </div>
 
-      <a href="">
-        <img
-          src={img}
-          target="_blank"
-          rel="norefferer"
-          alt=""
-          className="project-img"
-        />
+      <a href={linknetlify} target="_blank">
+        <img src={img} rel="norefferer" alt="" className="project-img" />
       </a>
       <motion.div className="project-description">
         <div
@@ -54,10 +48,10 @@ const Product = ({ img, subject, description }) => {
             <p className="projectDescription">{description}</p>
             <div className="btnBox">
               {" "}
-              <a href="">
+              <a href={linkgithub} target="_blank">
                 <button>GitHub Code</button>
               </a>
-              <a href="">
+              <a href={linknetlify} target="_blank">
                 <button>Live Website</button>
               </a>
             </div>
