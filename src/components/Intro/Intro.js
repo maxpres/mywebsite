@@ -30,7 +30,7 @@ const Intro = () => {
           </motion.h2>
           <motion.h2 className="my-name" variants={titleAnim}>
             I'm
-            <span> M</span>axxx.
+            <span> M</span>ax.
           </motion.h2>
 
           <motion.p className="intro-desc" variants={titleAnim}>
