@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navigation from "./Nav.css";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { titleAnimNav, ContainerNav } from "../../animation";
 
 import { Link } from "react-scroll";
 
@@ -19,8 +20,13 @@ const Nav = () => {
 
   return (
     <div>
-      <ul className={Navbar ? "ul active" : "ul"}>
-        <motion.li>
+      <motion.ul
+        className={Navbar ? "ul active" : "ul"}
+        variants={ContainerNav}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.li variants={titleAnimNav}>
           <Link
             activeClass="active"
             to="a-section"
@@ -28,38 +34,38 @@ const Nav = () => {
             smooth={true}
             offset={30}
             duration={500}
-            className="links"
+            className="navlinks"
           >
             About
           </Link>
         </motion.li>
-        <li>
+        <motion.li variants={titleAnimNav}>
           <Link
             activeClass="active"
             to="work"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-65}
             duration={800}
-            className="links"
+            className="navlinks"
           >
-            Work
+            Projects
           </Link>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li variants={titleAnimNav}>
           <Link
             activeClass="active"
             to="contact"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={50}
             duration={1000}
-            className="links"
+            className="navlinks"
           >
             Contact
           </Link>
-        </li>
-      </ul>
+        </motion.li>
+      </motion.ul>
     </div>
   );
 };

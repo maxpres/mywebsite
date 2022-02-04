@@ -1,18 +1,26 @@
 import React from "react";
 import "./About.css";
-import Me from "../../img/path2.jpg";
-import Me2 from "../../img/ich22.png";
+import { motion } from "framer-motion";
+import { fade } from "../../animation";
+import { useScroll } from "../../scrollAnimation";
 
 function About() {
+  const [element, controls] = useScroll();
   return (
-    <div className="a-section">
-      <div className="a-überschrift">
+    <motion.div
+      className="about-section"
+      variants={fade}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
+      <div className="about-headline">
         {" "}
         <span> A</span>bout me{" "}
       </div>
-      <div className="a" id="about">
-        <div className="a-left">
-          <div className="a-card">
+      <div className="about-container" id="about">
+        <div className="about-left">
+          <div className="about-card">
             <svg
               width="50vw"
               height="60vh"
@@ -20,7 +28,7 @@ function About() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="undraw_feeling_proud_qne1 1" clip-path="url(#clip0_1_2)">
+              <g id="undraw_feeling_proud_qne1 1" clipPath="url(#clip0_1_2)">
                 <path
                   id="Vector"
                   d="M516.326 380.018V565.013L547.27 615.443L549.625 619.279H671.722L674.189 380.018H516.326Z"
@@ -125,7 +133,7 @@ function About() {
                     <path
                       d="M213 26.2516L341.918 112.355"
                       stroke="#FF0000"
-                      stroke-width="7"
+                      strokeWidth="7"
                     />
                   </g>
                 </g>
@@ -357,9 +365,9 @@ function About() {
                   width="139.198"
                   height="98.5593"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"
@@ -392,29 +400,21 @@ function About() {
             </svg>
           </div>
         </div>
-        <div className="a-right">
-          {/* <div className="title">
-            <h1 className="a-title">
-              <span> A</span>bout me
-            </h1>
-          </div> */}
+        <div className="about-right">
           <div className="description">
-            <p className="a-desc">
-              Im Juni 2021 habe ich die Entscheidung getroffen. <br /> Ich
-              möchte etwas Visuelles, Kreatives, Logisches machen... Raus aus
-              der Controlling Abteilung, rein in's Web Development! Seitdem
-              nutze ich jede freie Minute mir das Programmieren von Webseiten
-              beizubringen. Angefangen mit <span>HTML</span> und{" "}
-              <span> CSS</span>, konnte ich mich schließlich in{" "}
-              <span>JavaScript </span> einarbeiten. Letztlich bin ich in
-              <span> React JS </span>angekommen und bereue diese Entscheidung
-              nicht 🙂. Wenn mir dann noch etwas Zeit bleibt, gehe ich zum
-              Ausgleich ins Fitnessstudio.
+            <p className="about-desc">
+              I made the decision in June 2021. I want to do something visual,
+              creative, logical ... Get out the controlling department, get into
+              the web development! Since I use every free minute to program
+              websites to teach. Starting with HTML and CSS I was finally able
+              to use Incorporate JavaScript. Finally, I arrived in React JS and
+              do not regret this decision 🙂. If I still have some time, I'll go
+              to the gym.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./Product.css";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { scrollReveal } from "../../animation";
+import { useScroll } from "../../scrollAnimation";
 
-const Product = ({ img, link, subject, description }) => {
+const Product = ({ img, subject, description }) => {
   const [clicked, setClicked] = useState(false);
 
   let index;
@@ -15,22 +18,29 @@ const Product = ({ img, link, subject, description }) => {
 
     setClicked(index);
   };
-
+  const [element, controls] = useScroll();
   return (
-    <div className="p">
-      <div className="p-browser">
+    <motion.div
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+      className="project"
+    >
+      <div className="project-browser">
         <h3 className="subject">{subject}</h3>
       </div>
 
-      <img
-        src={img}
-        target="_blank"
-        rel="norefferer"
-        alt=""
-        className="p-img"
-      />
-
-      <div className="p-description">
+      <a href="">
+        <img
+          src={img}
+          target="_blank"
+          rel="norefferer"
+          alt=""
+          className="project-img"
+        />
+      </a>
+      <motion.div className="project-description">
         <div
           onClick={() => toggle(index)}
           key={index}
@@ -41,16 +51,20 @@ const Product = ({ img, link, subject, description }) => {
         </div>
         {clicked === index ? (
           <div>
-            <p>{description}</p>
+            <p className="projectDescription">{description}</p>
             <div className="btnBox">
-              <button>GitHub Code</button>
-
-              <button>Live Website</button>
+              {" "}
+              <a href="">
+                <button>GitHub Code</button>
+              </a>
+              <a href="">
+                <button>Live Website</button>
+              </a>
             </div>
           </div>
         ) : null}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

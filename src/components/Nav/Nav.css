@@ -1,14 +1,15 @@
+/*NAVBAR*/
+
 .ul {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 8vh;
+  height: 11vh;
   width: 100%;
-  /* background-color: #222; */
   position: absolute;
   z-index: 11;
   overflow: hidden;
-  padding-left: 100px;
+  padding-left: 10rem;
   list-style-type: none;
   transition: 0.8s;
 }
@@ -19,33 +20,33 @@ ul.active {
   position: fixed;
 }
 
-.links {
-  margin: 35px;
+.navlinks {
+  margin: 3.5rem;
   cursor: pointer;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
   list-style-type: none;
   overflow: hidden;
   position: relative;
   color: rgba(255, 255, 255, 0.822);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 2.2rem;
   /* transition: 0.3s; */
   text-transform: uppercase;
 }
 
-.links:hover {
+.navlinks:hover {
   color: #fff;
   transform: scale(1.1);
 }
 
-.links:after {
+.navlinks:after {
   width: 0;
   content: "";
   position: absolute;
-  background-color: #3c8a3d;
-  height: 3px;
+  background-color: rgb(0, 207, 93);
+  height: 0.4rem;
   left: -10%;
-  top: 27px;
+  top: 3.3rem;
   transition: 0.3s;
 }
 
@@ -56,4 +57,65 @@ li :nth-child(1) {
 
 a:hover:after {
   width: 120%;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 15.5em) {
+  /*250px*/
+  .navlinks {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .ul {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 1rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 20em) {
+  /*320px*/
+  .ul {
+    padding: 0rem 2rem;
+  }
+  .navlinks {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  /*480px*/
+  .ul {
+    justify-content: left;
+    padding: 2rem 0rem 0rem 4.5rem;
+    margin: 0rem 1rem;
+  }
+  .navlinks {
+    font-size: 1.7rem;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .navlinks:after {
+    top: 3rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /*1024px*/
+  .ul {
+    padding: 2rem 0rem 0rem 11rem;
+    margin: 0rem;
+  }
+}
+
+@media screen and (min-width: 77.5em) {
+  /*1240px*/
+  .navlinks {
+    font-size: 2rem;
+  }
+  .ul {
+    padding: 2rem 0rem 0rem 13.5rem;
+  }
 }

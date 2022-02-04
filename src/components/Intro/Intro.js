@@ -1,71 +1,102 @@
 import "./intro.css";
 import Me from "../../img/ich22.png";
 import Wave from "./Wave";
-import React, { useRef } from "react";
+import React from "react";
 import ScrollToTop from "./ScrollToTop";
 import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin, FaXing, FaEnvelope } from "react-icons/fa";
+import { motion } from "framer-motion";
+import {
+  titleAnim,
+  titleAnim2,
+  Container,
+  fade,
+  photoAnim,
+  socialContainer,
+} from "../../animation";
 
 const Intro = () => {
   return (
-    <div className="i">
-      <div className="i-left">
-        <div className="i-left-wrapper">
-          <h2 className="i-intro">
+    <div className="intro-section">
+      <div className="intro-left">
+        <motion.div
+          variants={Container}
+          initial="hidden"
+          animate="show"
+          className="intro-left-wrapper"
+        >
+          <motion.h2 variants={titleAnim} className="me-intro">
             Hey,<br></br>
-          </h2>
-          <div className="name">
-            ich bin
+          </motion.h2>
+          <motion.h2 className="my-name" variants={titleAnim}>
+            I'm
             <span> M</span>ax.
-          </div>
+          </motion.h2>
 
-          <p className="i-desc">
+          <motion.p className="intro-desc" variants={titleAnim}>
             {" "}
-            Frond End Web Developer aus Düsseldorf. <br />
-          </p>
+            Front End Developer from Düsseldorf. <br />
+          </motion.p>
 
-          <Link
-            to="contact"
-            smooth={true}
-            offset={-50}
-            duration={1000}
-            className="btn"
-          >
-            Contact me
-            <FaEnvelope className="msg-box" />
-          </Link>
-        </div>
+          <motion.div variants={fade}>
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              className="btn"
+            >
+              Contact me
+              <FaEnvelope className="msg-box" />
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
-      <div className="i-right">
-        <img src={Me} alt="" className="i-img" />
-        <div className="social-media">
-          <a
-            className="linkedin"
+      <div className="intro-right">
+        <div className="bild">
+          <Wave />
+          <motion.img
+            variants={photoAnim}
+            initial="hidden"
+            animate="show" //damit wird das staggering deaktiviert und das bild ist sofort da
+            src={Me}
+            alt=""
+            className="intro-img"
+          />
+        </div>
+
+        <motion.div
+          className="social-media"
+          variants={socialContainer}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.a
+            variants={titleAnim2}
             target="_blank"
             href="https://www.linkedin.com/in/maximilian-pres-889a1517a/"
           >
-            <FaLinkedin className="social linkedin" />
-          </a>
+            <FaLinkedin className="social-icon" />
+          </motion.a>
 
-          <a
-            className="social xing"
+          <motion.a
+            variants={titleAnim2}
             target="_blank"
             href="https://www.xing.com/profile/Max_Pres/cv"
           >
-            <FaXing />
-          </a>
+            <FaXing className="social-icon" />
+          </motion.a>
 
-          <a
-            className="social github"
+          <motion.a
+            variants={titleAnim2}
             target="_blank"
             href="https://github.com/maxpres"
           >
-            <FaGithub />
-          </a>
-        </div>
+            <FaGithub className="social-icon" />
+          </motion.a>
+        </motion.div>
       </div>
       <ScrollToTop />
-      <Wave />
     </div>
   );
 };

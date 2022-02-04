@@ -2,14 +2,27 @@ import React from "react";
 import "./ProductList.css";
 import Product from "../Product/Product";
 import { products } from "../../data";
+import { motion } from "framer-motion";
+import { scrollReveal } from "../../animation";
+import { useScroll } from "../../scrollAnimation";
 
 const ProductList = () => {
+  const [element, controls] = useScroll();
   return (
-    <div className="pl" id="work">
-      <div className="pl-texts">
-        <h1 className="pl-title">Projekte</h1>
+    <motion.div
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+      className="project-list"
+      id="work"
+    >
+      <div className="project-list-texts">
+        <h1 className="project-list-title">
+          <span>P</span>rojects
+        </h1>
       </div>
-      <div className="pl-list">
+      <div className="project-list-list">
         {products.map((item) => (
           <Product
             key={item.id}
@@ -20,7 +33,7 @@ const ProductList = () => {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

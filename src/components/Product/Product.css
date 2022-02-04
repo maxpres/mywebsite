@@ -1,47 +1,48 @@
-.p {
+.project {
   width: 30%;
   height: 100%;
-  margin: 20px 10px;
-  border: 2px solid rgb(243, 242, 242);
-  border-radius: 10px 10px 0px 0px;
+  margin: 2rem 1rem;
+  border: 0.2rem solid rgb(243, 242, 242);
   overflow: hidden;
+  background: #fff;
 }
 
 .subject {
   color: #474747;
-  font-size: 1rem;
+  font-size: 2.1rem;
 }
 
-.p-description {
-  padding: 10px 20px;
-  color: #c0c0c0;
+.project-description {
+  padding: 1rem;
+  color: #000000;
   text-align: justify;
 }
 
 .description-box {
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
+  align-items: center;
 }
 
 .description-box span {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.8em;
 }
 
 .headline {
   display: flex;
   justify-content: start;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: #fff;
-  padding-bottom: 10px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 1rem;
   text-align: left;
 }
 
-.p-browser {
-  height: 35px;
+.project-browser {
+  height: 4rem;
   background-color: rgb(243, 242, 242);
   display: flex;
   justify-content: center;
@@ -50,35 +51,109 @@
   z-index: 2;
 }
 
-.p-img {
+.project-img {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   object-fit: cover;
   background-position: center;
-  /* border-bottom: 2px solid rgb(243, 242, 242); */
 }
 
 .btnBox {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.4rem;
 }
 
-.techstack {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px 10px 20px;
-  border-bottom: 2px solid rgb(243, 242, 242);
-}
-
-.icon {
-  font-size: 2rem;
+.btnBox button {
+  width: 100%;
   cursor: pointer;
+  font-size: 1.3rem;
+  border: 1px solid #000;
+  color: rgb(0, 0, 0);
+  transition: all 0.4s;
+  margin-top: 1.5rem;
 }
 
-@media screen and (max-width: 480px) {
-  .p {
-    width: 40%;
-    height: 20vh;
+.btnBox button:nth-child(1) {
+  margin-left: 0;
+}
+
+.btnBox button:hover {
+  background-color: #59b256;
+  color: #fff;
+}
+
+.btnBox button:active {
+  transform: scale(0.95);
+}
+
+.projectDescription {
+  font-size: 1.8rem;
+}
+
+/*============MEDIA QUERIES============*/
+
+@media screen and (min-width: 15.5em) {
+  /*250px*/
+  .project {
+    width: 75%;
+    height: 100%;
+  }
+  .project-img {
+    height: 100%;
+  }
+  .project-browser h3 {
+    font-size: 1.6rem;
+  }
+  .headline {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 0rem;
+  }
+  .projectDescription {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+  }
+  .project-description {
+    padding: 0.5rem;
+  }
+  .description-box span {
+    font-size: 1.4rem;
+    padding-right: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  /*480px*/
+  .project-browser h3 {
+    font-size: 1.7rem;
+  }
+  .project-description {
+    display: block;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  /*768px*/
+  .project {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .project-img {
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /*1024px*/
+  .project {
+    width: 30%;
+  }
+  .projectDescription {
+    font-size: 1.5rem;
   }
 }

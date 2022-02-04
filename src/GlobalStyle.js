@@ -5,12 +5,17 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding:0 ;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
+html{
+  /* font-size: 10px; */
+  font-size: 62.5%;
 }
 
 body{
     background: #000000;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lobster", sans-serif;
     font-weight: 400;
     overflow-x: hidden;
     color:#fff;
@@ -19,8 +24,8 @@ body{
 button {
   width: 50%;
   height: auto;
-  margin: 20px 3px;
-  padding: 10px;
+  margin: 2rem 0.3rem;
+  padding: 1rem;
   font-size: 0.9rem;
   background-color: rgb(255, 255, 255);
   color: #000;

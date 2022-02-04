@@ -4,7 +4,7 @@ export const products = [
     subject: "Explore Bali",
     description:
       "Explore Bali is a website that gives you an insight into the island in form of pictures. Beaches and activities are also recommended there.",
-    img: require("../src/img/bali.png"),
+    img: require("../src/img/explorebali.png"),
     tech: "HTML, CSS, JavaScript",
     link: "http://lama.dev",
   },

@@ -1,5 +1,5 @@
 {
-  "homepage": "http://maxpres.github.io/my-website-netlify",
+  "homepage": "http://maxpres.github.io/my-website",
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
@@ -16,8 +16,9 @@
     "framer-motion": "^4.1.17",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-github": "^2.1.2",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
+    "react-intersection-observer": "^8.33.1",
     "react-native-expo-viewport-units": "0.0.8",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.4",
