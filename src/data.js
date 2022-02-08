@@ -6,7 +6,8 @@ export const products = [
       "'Explore Bali' is a website that gives you an insight how beautiful the island is. The pictures might convince you to visit Bali.",
     img: require("../src/img/explorebali.png"),
     tech: "HTML, CSS, JavaScript",
-    link: "http://lama.dev",
+    linknetlify: "https://keen-pasteur-3dc99c.netlify.app/",
+    linkgithub: "https://github.com/maxpres/mywebsite.github.io",
   },
   {
     id: 2,
