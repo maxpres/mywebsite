@@ -1,7 +1,5 @@
 .about-section {
-  height: 100vh;
-  background-color: #2d3436;
-  background-image: linear-gradient(255deg, #252627 0%, #000000 54%);
+  background-color: #000;
   padding-bottom: 5rem;
 }
 
@@ -84,7 +82,7 @@
   /*250pxpx*/
   .about-headline {
     font-size: 4rem;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 4rem 2rem 0rem 2rem;
     justify-content: center;
   }
   .about-container {
@@ -111,10 +109,10 @@
   /*320pxpx*/
   .about-headline {
     font-size: 5rem;
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 5rem 2rem 0rem 2rem;
   }
   .about-desc {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -122,6 +120,9 @@
   /*480px*/
   .about-headline {
     font-size: 6rem;
+  }
+  .about-desc {
+    padding-top: 3rem;
   }
 }
 
@@ -131,7 +132,7 @@
     font-size: 6.5rem;
   }
   .about-card svg {
-    margin: 2rem 0rem;
+    margin: 3rem 0rem;
   }
 }
 
@@ -143,9 +144,19 @@
   }
 
   .about-headline {
-    padding: 3rem 0rem;
+    padding: 5rem 0rem 3rem 0rem;
   }
   .about-desc {
-    width: 85%;
+    width: 80%;
+  }
+  .about-card svg {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  /*1024px*/
+  .about-desc {
+    font-size: 1.8rem;
   }
 }

@@ -96,11 +96,14 @@
 @media screen and (min-width: 15.5em) {
   /*250px*/
   .project {
-    width: 75%;
+    width: 80%;
     height: 100%;
   }
   .project-img {
     height: 100%;
+  }
+  .project-browser {
+    height: 3rem;
   }
   .project-browser h3 {
     font-size: 1.6rem;
@@ -121,6 +124,17 @@
     font-size: 1.4rem;
     padding-right: 0.4rem;
   }
+  .btnBox {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 25em) {
+  /*400px*/
+  .btnBox {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 30em) {
@@ -132,6 +146,9 @@
     display: block;
     font-size: 1rem;
     padding: 0.7rem;
+  }
+  .btnBox button {
+    font-size: 1.3rem;
   }
 }
 

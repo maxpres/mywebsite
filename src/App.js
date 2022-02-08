@@ -13,12 +13,12 @@ function App() {
   // const darkMode = theme.state.darkMode;
   return (
     <div>
+      <meta charSet="utf-8" />
       <Helmet>
-        <meta charSet="utf-8" />
         <title>Max Pres | Front End Developer</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-        <meta name="description" content="testing" />
       </Helmet>
+      <link rel="canonical" href="http://mysite.com/example" />
+      <meta name="description" content="testing" />
       <GlobalStyle />
       <Nav />
       <Intro />

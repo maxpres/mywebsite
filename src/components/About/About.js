@@ -16,7 +16,7 @@ function About() {
     >
       <div className="about-headline">
         {" "}
-        <span> A</span>bout{" "}
+        <span> A</span>bout me{" "}
       </div>
       <div className="about-container" id="about">
         <div className="about-left">
