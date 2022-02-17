@@ -7,7 +7,7 @@ export const products = [
     img: require("../src/img/explorebali.png"),
     tech: "HTML, CSS, JavaScript",
     linknetlify: "https://keen-pasteur-3dc99c.netlify.app/",
-    linkgithub: "https://github.com/maxpres/mywebsite.github.io",
+    linkgithub: "https://github.com/maxpres/explorebali-website",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const products = [
     img: require("../src/img/todo.png"),
     tech: "HTML, CSS, JavaScript",
     linknetlify: "https://wizardly-lamport-5a88cf.netlify.app",
-    linkgithub: "https://github.com/maxpres/todo-list.github.io",
+    linkgithub: "https://github.com/maxpres/todo-list",
   },
   {
     id: 3,

@@ -28,7 +28,7 @@ const Nav = () => {
         <motion.li variants={titleAnimNav}>
           <Link
             activeClass="active"
-            to="a-section"
+            to="about"
             spy={true}
             smooth={true}
             offset={30}
@@ -44,7 +44,7 @@ const Nav = () => {
             to="work"
             spy={true}
             smooth={true}
-            offset={-65}
+            offset={-85}
             duration={800}
             className="navlinks"
           >

@@ -13,6 +13,7 @@ function About() {
       ref={element}
       animate={controls}
       initial="hidden"
+      id="about"
     >
       <div className="about-headline">
         {" "}
