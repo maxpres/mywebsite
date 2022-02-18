@@ -15,6 +15,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column;
+  margin-top: 5rem;
 }
 
 #reactsymbol {
@@ -36,7 +38,7 @@
   font-size: 7rem;
   display: flex;
   justify-content: left;
-  padding: 6rem 10rem;
+  padding: 6rem 10rem 0rem 10rem;
 }
 
 .about-headline span {
@@ -59,6 +61,7 @@
   justify-content: center;
   align-items: center;
   padding-left: 2rem;
+  margin-top: 2rem;
 }
 
 .about-desc {
@@ -67,7 +70,7 @@
   width: 70vw;
   line-height: 4rem;
   color: #c0c0c0;
-  text-align: justify;
+  text-align: start;
   padding: 0 0 10rem 2rem;
 }
 
@@ -79,7 +82,7 @@
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 15.5em) {
-  /*250pxpx*/
+  /*250px*/
   .about-headline {
     font-size: 4rem;
     padding: 4rem 2rem 0rem 2rem;
@@ -143,11 +146,12 @@
     justify-content: space-between;
   }
 
-  .about-headline {
+  /* .about-headline {
     padding: 5rem 0rem 3rem 0rem;
-  }
+  } */
   .about-desc {
     width: 80%;
+    margin-top: 8rem;
   }
   .about-card svg {
     height: 50vh;

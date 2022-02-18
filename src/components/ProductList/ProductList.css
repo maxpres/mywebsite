@@ -39,7 +39,7 @@
 @media screen and (min-width: 20em) {
   /*320px*/
   .project-list {
-    padding: 3rem;
+    padding: 2rem;
   }
   .project-list-title {
     font-size: 6rem;
