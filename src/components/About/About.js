@@ -404,13 +404,16 @@ function About() {
         <div className='about-right'>
           <div className='description'>
             <p className='about-desc'>
-              I made the decision in June 2021. I want to do something visual,
-              creative, logical ... <br /> Get out the controlling department,
-              get into the web development! Since I use every free minute to
-              program websites to teach. Starting with HTML and CSS I was
-              finally able to use incorporate JavaScript. I took my first steps
-              with React js buildung this website. If I still have some time,
-              I'll go to the gym or discover new food places.
+              After I obtained my university degree in 2018 and worked in
+              controlling, I found out quite early that this wasn't for me. This
+              is when I decided for a change. I was looking into an occupation
+              that would fulfill my interest in something analytical, yet
+              creative. This is when I started putting my dedication into web
+              development. Since summer 2021, I study and work on developing
+              websites, constantly. I started to get to know HTML and CSS until
+              I was ultimately able to incorporate JavaScript. In my free time I
+              like to hit the gym and try new food spots around the world. I
+              hope you enjoy my website which was created with React JS.
             </p>
           </div>
         </div>
