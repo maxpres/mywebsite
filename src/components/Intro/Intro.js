@@ -35,7 +35,7 @@ const Intro = () => {
 
           <motion.p className='intro-desc' variants={titleAnim}>
             {' '}
-            Frontend Developer from Düsseldorf. <br />
+            Frontend Developer from Düsseldorf/Cologne <br />
           </motion.p>
 
           <motion.div variants={fade}>
