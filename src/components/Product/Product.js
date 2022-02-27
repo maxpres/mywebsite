@@ -27,17 +27,10 @@ const Product = ({ img, linknetlify, linkgithub, subject, description }) => {
       initial='hidden'
       className='project'
     >
-      {/* <div className="project-browser">
-        <h3 className="subject">{subject}</h3>
-      </div> */}
-
       <a href={linknetlify} target='_blank'>
         <img src={img} rel='norefferer' alt='' className='project-img' />
       </a>
       <motion.div className='project-description'>
-        {/* <div className='project-browser'>
-          <h3 className='subject'>{subject}</h3>
-        </div> */}
         <div
           onClick={() => toggle(index)}
           key={index}
