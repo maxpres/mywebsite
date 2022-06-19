@@ -15,7 +15,7 @@ function App() {
     <div>
       <meta charSet='utf-8' />
       <Helmet>
-        <title>Max Pres | Front End Developer</title>
+        <title>Max Pres | Frontend Developer</title>
       </Helmet>
       <link rel='canonical' href='http://mysite.com/example' />
       <meta name='description' content='testing' />
