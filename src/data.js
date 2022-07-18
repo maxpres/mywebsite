@@ -29,4 +29,14 @@ export const products = [
     linknetlify: 'https://max-quizapp.netlify.app',
     linkgithub: 'https://github.com/maxpres/quiz.github.io',
   },
+  {
+    id: 4,
+    subject: 'Airbnb Clone',
+    description:
+      'Train your brain- A quiz created to screen your common sense. Your score and whether you could beat other participants, you will find out after you answered the last question. Good luck!',
+    img: require('../src/img/airbnb.png'),
+    tech: 'HTML, CSS, JavaScript',
+    linknetlify: 'https://airbnb-clone-mocha-ten.vercel.app/',
+    linkgithub: 'https://github.com/maxpres/airbnb-clone.git',
+  },
 ];
