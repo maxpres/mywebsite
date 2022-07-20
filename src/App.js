@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet';
 function App() {
   // const theme = useContext(ThemeContext);
   // const darkMode = theme.state.darkMode;
+
   return (
     <div>
       <meta charSet='utf-8' />

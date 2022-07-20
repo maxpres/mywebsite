@@ -6,6 +6,8 @@ import { useScroll } from '../../scrollAnimation';
 
 function About() {
   const [element, controls] = useScroll();
+
+
   return (
     <motion.div
       className='about-section'

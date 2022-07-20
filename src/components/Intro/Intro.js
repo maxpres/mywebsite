@@ -25,31 +25,34 @@ const Intro = () => {
           animate='show'
           className='intro-left-wrapper'
         >
-          <motion.h2 variants={titleAnim} className='me-intro'>
-            Hey,<br></br>
-          </motion.h2>
-          <motion.h2 className='my-name' variants={titleAnim}>
-            I'm
-            <span> M</span>ax.
-          </motion.h2>
+          <div className='first-text'>
+            <motion.h2 variants={titleAnim} className='me-intro'>
+              Hi,<br></br>
+            </motion.h2>
+            <motion.h2 className='my-name' variants={titleAnim}>
+              I'm
+              <span> M</span>ax.
+            </motion.h2>
+          </div>
+          <div className='second-text'>
+            <motion.p className='intro-desc' variants={titleAnim}>
+              {' '}
+              Frontend Developer from Cologne <br />
+            </motion.p>
 
-          <motion.p className='intro-desc' variants={titleAnim}>
-            {' '}
-            Frontend Developer from Cologne <br />
-          </motion.p>
-
-          <motion.div variants={fade}>
-            <Link
-              to='contact'
-              smooth={true}
-              offset={-50}
-              duration={1000}
-              className='btn'
-            >
-              Contact me
-              <FaEnvelope className='msg-box' />
-            </Link>
-          </motion.div>
+            <motion.div variants={fade}>
+              <Link
+                to='contact'
+                smooth={true}
+                offset={-50}
+                duration={1000}
+                className='btn'
+              >
+                Contact me
+                <FaEnvelope className='msg-box' />
+              </Link>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
       <div className='intro-right'>

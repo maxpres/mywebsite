@@ -13,7 +13,7 @@ export const products = [
     id: 2,
     subject: 'Airbnb Clone',
     description:
-      'This is an airbnb clone (UI) where you can search for accommodations in your favorite destinations. After choosing a date using the calender picker, you will get some proposals.',
+      'This is an airbnb clone (UI) where you can search for accommodations. After choosing a date using the calender picker, you will get some proposals.',
     img: require('../src/img/airbnb.png'),
     tech: 'HTML, CSS, JavaScript',
     linknetlify: 'https://airbnb-project-clone.netlify.app/',
