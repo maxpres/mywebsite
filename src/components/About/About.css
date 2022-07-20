@@ -67,7 +67,7 @@
 .about-desc {
   font-weight: 200;
   font-size: 2.2rem;
-  width: 70vw;
+  width: 75vw;
   line-height: 4rem;
   color: #c0c0c0;
   text-align: start;
@@ -96,11 +96,11 @@
     padding-left: 0;
   }
   .about-card svg {
-    height: 40vh;
+    height: 45vh;
   }
   .about-desc {
     font-size: 1.5rem;
-    line-height: 2.8rem;
+    line-height: 2.2rem;
     padding: 0;
   }
   .about-right {
@@ -115,7 +115,7 @@
     padding: 5rem 2rem 0rem 2rem;
   }
   .about-desc {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -132,7 +132,7 @@
 @media screen and (min-width: 37.5em) {
   /*600px*/
   .about-headline {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
   }
   .about-card svg {
     margin: 3rem 0rem;
@@ -146,15 +146,12 @@
     justify-content: space-between;
   }
 
-  /* .about-headline {
-    padding: 5rem 0rem 3rem 0rem;
-  } */
   .about-desc {
     width: 80%;
     margin-top: 8rem;
   }
   .about-card svg {
-    height: 50vh;
+    height: 45vh;
   }
 }
 
@@ -162,5 +159,19 @@
   /*1024px*/
   .about-desc {
     font-size: 1.8rem;
+  }
+  .about-desc {
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  /*1440px*/
+  .about-headline {
+    font-size: 7.5rem;
+  }
+  .about-desc {
+    line-height: 3.2rem;
+    font-size: 2.2rem;
   }
 }
