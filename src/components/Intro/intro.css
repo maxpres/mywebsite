@@ -14,7 +14,7 @@
 }
 
 .first-text {
-  height: 15%;
+  height: 35%;
 }
 
 .second-text {
@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: 15%;
+  top: 10%;
   z-index: 10;
 }
 
@@ -256,10 +256,10 @@
     font-size: 8rem;
   }
   .btn {
-    max-width: 40%;
+    max-width: 50%;
   }
   .msg-box {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-left: 0rem;
   }
 }
@@ -302,7 +302,7 @@
   .btn {
     width: 40%;
     height: 100%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-left: 4rem;
   }
   .msg-box {
