@@ -5,7 +5,7 @@ export const products = [
     description:
       'Sell or Rent your house- This is a housemarket place, where people can register and sell or rent their home/appartment. You can create your own listing and choose between many settings.',
     img: require('../src/img/immo.png'),
-    tech: 'HTML, CSS, JavaScript',
+    tech: 'JavaScript, React.js, Firebase',
     linknetlify: 'https://immoscout.vercel.app/',
     linkgithub: 'https://github.com/maxpres/immoscout.git',
   },
@@ -15,7 +15,7 @@ export const products = [
     description:
       'This is an airbnb clone (UI) where you can search for accommodations. After choosing a date using the calender picker, you will get some proposals.',
     img: require('../src/img/airbnb.png'),
-    tech: 'HTML, CSS, JavaScript',
+    tech: 'JavaScript, React.js, Next.js, Tailwind CSS',
     linknetlify: 'https://airbnb-project-clone.netlify.app/',
     linkgithub: 'https://github.com/maxpres/airbnb-clone.git',
   },
