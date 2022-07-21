@@ -292,11 +292,11 @@
     padding-left: 4rem;
   }
   .me-intro {
-    font-size: 5rem;
+    font-size: 8.5rem;
     padding-left: 4rem;
   }
   .my-name {
-    font-size: 5rem;
+    font-size: 6rem;
     padding-left: 4rem;
   }
   .btn {
@@ -331,7 +331,7 @@
     padding: 0rem 5rem;
   }
   .me-intro {
-    font-size: 5.5rem;
+    font-size: 8.5rem;
     padding: 0rem 5rem;
   }
   .my-name {
@@ -355,6 +355,9 @@
   .intro-img {
     width: 60%;
   }
+  .me-intro {
+    font-size: 10.5rem;
+  }
 }
 
 @media screen and (min-width: 64em) {
@@ -365,19 +368,25 @@
   .intro-left-wrapper {
     padding-left: 6rem;
   }
+  .my-name {
+    font-size: 7rem;
+  }
+  .intro-desc {
+    font-size: 2.3rem;
+  }
 }
 
 @media screen and (min-width: 77.5em) {
-  /*1024px*/
+  /*1240px*/
   .intro-img {
     width: 50%;
   }
   .me-intro {
-    font-size: 6rem;
+    font-size: 12rem;
     padding: 0rem 7rem;
   }
   .my-name {
-    font-size: 6rem;
+    font-size: 8rem;
     padding: 0rem 7rem;
   }
   .btn {
@@ -389,5 +398,30 @@
   }
   .intro-desc {
     padding: 0rem 7rem;
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  /*1440px*/
+  .me-intro {
+    font-size: 16rem;
+  }
+  .intro-desc {
+    font-size: 3.3rem;
+  }
+}
+
+@media screen and (min-width: 102.5em) {
+  /*1640px*/
+  .me-intro {
+    font-size: 19rem;
+  }
+  .my-name {
+    font-size: 8.5rem;
+  }
+  .btn {
+    width: 30%;
+    height: 90%;
   }
 }
