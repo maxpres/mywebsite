@@ -171,3 +171,17 @@
     font-size: 1.5rem;
   }
 }
+
+@media screen and (min-width: 90em) {
+  /*1440px*/
+  .project-img {
+    height: 24rem;
+  }
+}
+
+@media screen and (min-width: 102.5em) {
+  /*1640px*/
+  .project-img {
+    height: 27rem;
+  }
+}

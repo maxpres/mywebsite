@@ -91,7 +91,7 @@ textarea {
 }
 
 input,
-textarea[type="text"] {
+textarea[type='text'] {
   font-size: 1.2rem;
 }
 
@@ -231,5 +231,16 @@ textarea[type="text"] {
   /*1200px*/
   .contact-wrapper {
     padding: 0 12rem;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  /*1440px*/
+  .contact-title {
+    font-size: 8.5rem;
+  }
+
+  input {
+    height: 6rem;
   }
 }

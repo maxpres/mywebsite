@@ -132,15 +132,20 @@
 @media screen and (min-width: 37.5em) {
   /*600px*/
   .about-headline {
-    font-size: 5.5rem;
+    font-size: 7.5rem;
   }
   .about-card svg {
     margin: 3rem 0rem;
   }
+  .about-desc {
+    font-size: 2rem;
+    padding-top: 0rem;
+    line-height: 3.3rem;
+  }
 }
 
-@media screen and (min-width: 48em) {
-  /*768px*/
+/*768px*/
+/* @media screen and (min-width: 48em) {
   .about-container {
     flex-direction: row;
     justify-content: space-between;
@@ -153,25 +158,47 @@
   .about-card svg {
     height: 45vh;
   }
-}
+} */
 
 @media screen and (min-width: 64em) {
   /*1024px*/
-  .about-desc {
-    font-size: 1.8rem;
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   .about-desc {
+    width: 80%;
+    margin-top: 8rem;
+    font-size: 1.8rem;
     line-height: 2.6rem;
+  }
+  .about-card svg {
+    height: 45vh;
+  }
+  .about-headline {
+    font-size: 8rem;
   }
 }
 
 @media screen and (min-width: 90em) {
   /*1440px*/
   .about-headline {
-    font-size: 7.5rem;
+    font-size: 9.5rem;
   }
   .about-desc {
     line-height: 3.2rem;
     font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 102.5em) {
+  /*1640px*/
+  .about-headline {
+    font-size: 11.5rem;
+  }
+  .about-desc {
+    line-height: 3.7rem;
+    font-size: 2.6rem;
   }
 }
