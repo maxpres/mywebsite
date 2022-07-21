@@ -288,7 +288,7 @@
     opacity: 0.8;
   }
   .intro-desc {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding-left: 4rem;
   }
   .me-intro {
@@ -382,11 +382,11 @@
     width: 50%;
   }
   .me-intro {
-    font-size: 12rem;
+    font-size: 10rem;
     padding: 0rem 7rem;
   }
   .my-name {
-    font-size: 8rem;
+    font-size: 7rem;
     padding: 0rem 7rem;
   }
   .btn {
